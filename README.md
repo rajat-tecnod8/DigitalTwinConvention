@@ -11,15 +11,15 @@ We call the level 1 view as "components", level 2 as "modules" and level 3 as "s
 The naming convention for the 3D object would be,
 ```
 component:
-	name_comp_id
+	<name>_comp_<cid>
 	eg. "box_comp_001"
 
 module:
-	name_mod_<cid>
+	<name>_mod_<cid>_<id>
 	eg. "board_mod_001"
 
 submodule:
-	name_sub_<cid>_id
+	<name>_sub_<cid>_<id>
 	eg. "flap_sub_001_002"
 ```
 
