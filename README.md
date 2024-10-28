@@ -29,37 +29,64 @@ Eg.
 {
 	"component_data":{
 
-		"components":["abc_comp_001", "def_comp_002"],
+		"list":["abc_comp_001", "def_comp_002"],
 
 		"parameters":{
 
 			"abc_comp_001":{
 			 	"name":"abc",
 				"display_name":"abc",
-				"interactable":false	
-			 },
-			
-			"def_comp_002":{
-				"name":"cde",
-				"display_name":"efg",
-				"interactable":true	
-			}
+                "id":"001",
+				"interactable":true,
+                "viewable":true,
+                "description":" "	
+			 }
+
 		}
 	}
 	,
 
 	"module_data":{
-		"modules":["abc_mod_001", "def_mod_002"],
+		"list":["abc_mod_001", "def_mod_002"],
 
         "parameters":{
 
-        }
-	}
-	,
-	"submodule_data":{
-		"submodules":["ab_sub_001_01", "cd_sub_001_02"],
+            "abc_mod_001":{
+                "name":"abc",
+                "parent":" ",
+                "submodule_data":{
+                    "list":["ab_sub_001_01", "cd_sub_001_02"],
+                    "parameters":{
+                        "ab_sub_001_01":{
+                            "name":"cde",
+                            "clickable":true
+                        },
 
-        "parameters":{
+                        "cd_sub_001_02":{
+                            "name":"def",
+                            "clickable":true
+                        }
+                    }
+                }
+            },
+
+            "def_mod_002":{
+                "name":"def",
+                "submodule_data":{
+                    "list":["ab_sub_002_01", "cd_sub_002_02"],
+                    "parameters":{
+                        "ab_sub_002_01":{
+                            "name":"cde",
+                            "clickable":true
+                        },
+
+                        "cd_sub_002_02":{
+                            "name":"def",
+                            "clickable":true
+                        }
+                    }
+                }
+            }
 
         }
 	}
