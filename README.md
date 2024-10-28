@@ -36,10 +36,11 @@ Eg.
 			"abc_comp_001":{
 			 	"name":"abc",
 				"display_name":"abc",
-                "id":"001",
+                		"id":"001",
 				"interactable":true,
-                "viewable":true,
-                "description":" "	
+                		"viewable":true,
+				"description":" ",
+				"module_name":" "	
 			 }
 
 		}
@@ -53,7 +54,6 @@ Eg.
 
             "abc_mod_001":{
                 "name":"abc",
-                "parent":" ",
                 "submodule_data":{
                     "list":["ab_sub_001_01", "cd_sub_001_02"],
                     "parameters":{
