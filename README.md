@@ -29,66 +29,107 @@ Eg.
 {
 	"component_data":{
 
-		"list":["abc_comp_001", "def_comp_002"],
+		"list":["Mouth_comp_101", "Section_comp_102"],
 
 		"parameters":{
 
-			"abc_comp_001":{
-			 	"name":"abc",
-				"display_name":"abc",
-                		"id":"001",
-				"interactable":true,
-                		"viewable":true,
-				"description":" ",
-				"module_name":" "	
-			 }
+		    "Mouth_comp_101":{
+			"name":"Mouth",
+			"display_name":"Mouth",
+			"uid":"101",
+			"id":0,
+			"interactable":true,
+			"viewable":true,
+			"description":"",
+			"submodule_name":"Teeth_mod_201"
+		    }
+		    ,
+		    "Section_comp_102":{
+			"name":"Section",
+			"display_name":"Section",
+			"uid":"102",
+			"id":1,
+			"interactable":true,
+			"viewable":true,
+			"description":"",
+			"submodule_name":"Tooth_mod_202"
+		    }
 
 		}
 	}
 	,
 
 	"module_data":{
-		"list":["abc_mod_001", "def_mod_002"],
+		"list":["Teeth_mod_201", "Tooth_mod_202"],
 
-        "parameters":{
-
-            "abc_mod_001":{
-                "name":"abc",
-                "submodule_data":{
-                    "list":["ab_sub_001_01", "cd_sub_001_02"],
-                    "parameters":{
-                        "ab_sub_001_01":{
-                            "name":"cde",
-                            "clickable":true
-                        },
-
-                        "cd_sub_001_02":{
-                            "name":"def",
-                            "clickable":true
-                        }
-                    }
-                }
-            },
-
-            "def_mod_002":{
-                "name":"def",
-                "submodule_data":{
-                    "list":["ab_sub_002_01", "cd_sub_002_02"],
-                    "parameters":{
-                        "ab_sub_002_01":{
-                            "name":"cde",
-                            "clickable":true
-                        },
-
-                        "cd_sub_002_02":{
-                            "name":"def",
-                            "clickable":true
-                        }
-                    }
-                }
-            }
-
-        }
+	        "parameters":{
+	            "Teeth_mod_201":{
+	                "name":"Teeth",
+	                "uid":"201",
+	                "submodule_data":{
+	                    "list":["open_sub_308", "nerve_sub_309"],
+	                    "parameters":{
+	                        "open_sub_308":{
+	                            "name":"open",
+	                            "uid":"308",
+	                            "clickable":true
+	                        },
+	                        "nerve_sub_309":{
+	                            "name":"nerve",
+	                            "uid":"309",
+	                            "clickable":true
+	                        }
+	                    }
+	                }
+	            },
+	
+	            "Tooth_mod_202":{
+	                "name":"Tooth",
+	                "uid":"202",
+	                "submodule_data":{
+	                    "list":["nerve_sub_301", "gum_sub_302", "dentin_sub_303", "nerve_sub_304", "tooth_sub_305", "half_tooth_sub_306", "nerve_sub_307"],
+	
+	                    "parameters":{
+	                        "nerve_sub_301":{
+	                            "name":"nerve",
+	                            "uid":"301",
+	                            "clickable":true
+	                        },
+	                        "gum_sub_302":{
+	                            "name":"gum",
+	                            "uid":"302",
+	                            "clickable":true
+	                        },
+	                        "dentin_sub_303":{
+	                            "name":"dentin",
+	                            "uid":"303",
+	                            "clickable":true
+	                        },
+	                        "nerve_sub_304":{
+	                            "name":"nerve",
+	                            "uid":"304",
+	                            "clickable":true
+	                        },
+	                        "tooth_sub_305":{
+	                            "name":"tooth",
+	                            "uid":"305",
+	                            "clickable":true
+	                        },
+	                        "half_tooth_sub_306":{
+	                            "name":"half-tooth",
+	                            "uid":"306",
+	                            "clickable":true
+	                        },
+	                        "nerve_sub_307":{
+	                            "name":"nerve",
+	                            "uid":"307",
+	                            "clickable":true
+	                        }
+	                    }
+	                }
+	            }
+	
+	        }
 	}
 
 }
